@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio de Merveille</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="logo" href="index.html">MBAZ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact" aria-labelledby="contact-title">
+            <p class="eyebrow">Échangeons</p>
+            <h1 id="contact-title">Contact</h1>
+            <p class="contact-intro">Une idée de projet, une collaboration ? Écrivez-moi.</p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="button">Envoyer <span aria-hidden="true">↗</span></button>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 - Portfolio de Merveille</p>
+        <p>Abomey-Calavi, Bénin</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
